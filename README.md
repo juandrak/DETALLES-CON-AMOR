@@ -1,1 +1,165 @@
-# DETALLES-CON-AMOR
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+<title>DETALLES CON AMOR</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="icon" type="image/jpg" href="C:\Users\Juan Camilo\Desktop\Proyecto\detalles con amor.ico">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="main.js"></script>
+</head> 
+  <body> 
+    <div class="ventana" id="vent">
+    	
+    	<a href="javascript:cerrar()"><div id="cerrar" class="icon-cancel-circle"></div></a>
+    	<h2><strong>CALCULADORA</strong></h2>
+    	<p>de enteros</p>
+<center>
+    <div class="contenedor">
+        <form>
+            <table>
+                <tr>
+                    <td colspan="4"><input class="text" name="display" id="campodetexto" type="text" value=""></td>
+                </tr>    
+                <tr>
+                    <td><input class="columna1" id="7" type="button" value="7" onClick="addChar(this.form.display, '7')"></td>
+                    <td><input class="columna1" id="8" type="button" value="8" onClick="addChar(this.form.display, '8')"></td>
+                    <td><input class="columna1" id="9" type="button" value="9" onClick="addChar(this.form.display, '9')"></td>
+                    <td><input class="columna2" id="suma" type="button" value="+" onClick="addChar(this.form.display, '+')"></td>
+                </tr>
+                <tr>
+                    <td><input class="columna1" id="4" type="button" value="4" onClick="addChar(this.form.display, '4')"></td>
+                    <td><input class="columna1" id="5" type="button" value="5" onClick="addChar(this.form.display, '5')"></td>
+                    <td><input class="columna1" id="6" type="button" value="6" onClick="addChar(this.form.display, '6')"></td>
+                    <td><input class="columna2" id="resta" type="button" value="-" onClick="addChar(this.form.display, '-')"></td>
+                </tr> 
+                <tr>
+                    <td><input class="columna1" id="1" type="button" value="1" onClick="addChar(this.form.display, '1')"></td>
+                    <td><input class="columna1" id="2" type="button" value="2" onClick="addChar(this.form.display, '2')"></td>
+                    <td><input class="columna1" id="3" type="button" value="3" onClick="addChar(this.form.display, '3')"></td>
+                    <td><input class="columna2" id="multiplicacion" type="button" value="*" onClick="addChar(this.form.display, '*')"></td>
+                </tr>  
+                <tr>
+                    <td><input class="columna1" id="clear" type="button" value="CE" onClick="this.form.display.value = 0 "></td>
+                    <td><input class="columna1" id="0" type="button" value="0" onClick="addChar(this.form.display, '0')"></td>
+                    <td><input class="columna1" id="equals" type="button" value="=" onClick="if (checkNum(this.form.display.value))
+                                                                                                      { compute(this.form) }"></td>
+                    <td><input class="columna2" id="division" type="button" value="/" onClick="addChar(this.form.display, '/')"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</center>
+	</div>
+
+ 
+
+  <div class="social">
+    <ul>
+      <li><a href="https://www.facebook.com/DetallesEliza912" target="_blank" class="icon-facebook"></a></li>
+      <li><a href="https://www.instagram.com/detalleliza912/?hl=es-la" target="_blank" class="icon-instagram"></a></li>
+      <li><a href="mailto:notaeliza@gmail.com?subject=¿Quiero mas información sobre tus productos?&body=Hola, te contacto desde tu website y quiero saber mas información sobre los productos que ofreces allí" class="icon-google2"></a></li>
+      <li><a href="https://wa.me/573127474361?" target="_blank" class="icon-whatsapp"></a></li>
+    <li><a href="javascript:abrir()" class="icon-calculator"></a></li>
+    </ul>
+  </div>
+	 <header>
+	   <div class="wrapper">
+		  <div class="logo">
+			 DETALLES CON AMOR
+		  </div>
+		 <nav>
+			       <a href="index.html" class="icon-home"> Inicio</a>
+        <a href="info.html" class="icon-info"> Info</a>
+    </nav>
+	</div>
+	</header>
+<section class="contenido wrapper">
+<section id="izq">
+   <center> <img src="productos\proyecto1 (1).jpeg" width="300px" height="300px"></center>
+    <br>
+    <CENTER><p><STRONG>MONEDEROS TEJIDOS EN CROCHET</STRONG></p></CENTER>
+    <br>
+    <br>
+    <center><img src="productos\proyecto1 (45).jpg" width="300px" height="300px"></center>
+    <br>
+    <center><p><strong>INDIVIDUAL BORDADO YUGOSLAVO</strong></p></center>
+    <br>
+    <br>
+    <center><img src="productos\proyecto1 (46).jpg" width="300px" height="300px"></center>
+    <br>
+    <center><p><strong>CAJAS EN MADERA, TECNICA DECOUPAGE, 20x20x6</strong></p></center>
+    <br>
+    <center><img src="productos\proyecto1 (13).jpg" width="300px" height="300px"></center>
+    <br>
+    <center><p><strong>RELOJ MARIPOSA EN MADERA CON FLORES EN PORCELANICRON 40x40</strong></p></center>
+    <br>
+    <br>
+    <center><img src="productos\proyecto1 (36).jpg" width="300px" height="300px"></center>
+    <br>
+    <center><p><strong>LIBRETA DE MADERA PERSONALIZADA</strong></p></center>
+    <br>
+    <br>
+    <center><img src="productos\proyecto1 (34).jpg" width="300px" height="300px"></center>
+    <br>
+    <center><p><strong>LIBRETA EN MADERA PARSONALIZADA</strong></p></center>
+    <br>
+    <br>
+    <center><img src="productos\proyecto1 (50).jpg" width="300px" height="300px"></center>
+    <br>
+    <center><p><strong>CUADRO PINTADO EN OLEOS 70x90</strong></p></center>
+    <br>
+    <br>
+</section>
+<section id="der"></section>
+<center><img src="productos\proyecto1 (8).jpg" width="300px" height="300px"></center>
+<br>
+<center><p><strong>COJIN TEJIDO EN CROCHET</strong></p></center>
+<br>
+<br>
+<center><img src="productos\proyecto1 (26).jpg" width="300px" height="300px"></center>
+<br>
+<center><p><strong>FOLDER DECORADO CON PEDRERIA Y STRASS</strong></p></center>
+<br>
+<br>
+<center><img src="productos\proyecto1 (21).jpg" width="300px" height="300px"></center>
+<br>
+<center><p><strong>MARIPOSAS TEJIDAS EN CROCHET</strong></p></center>
+<br>
+<br>
+<center><img src="productos\proyecto1 (14).jpg" width="300px" height="300px"></center>
+<br>
+<center><p><strong>CAJA DE MADERA DECORADA CON STRASS 15x15x7</strong></p></center>
+<br>
+<br>
+<center><img src="productos\proyecto1 (19).jpg" width="300px" height="300px"></center>
+<br>
+<center><p><strong>CUADRO EN TELA TECNICA PATCHWORK 40x40</strong></p></center>
+<br>
+<br>
+<center><img src="productos\proyecto1 (10).jpg" width="300px" height="300px"></center>
+<br>
+<center><p><strong>SERVILLETERO DE MADERA TECNICA DECOUPAGE 20x20x7</strong></p></center>
+<br>
+<br>
+<center><img src="productos\proyecto1 (35).jpg" width="300px" height="300px"></center>
+<br>
+<center><p><strong>LLIBRETA DE MADERA CON ESPEJO TECNICA STRASS</strong></p></center>
+<br>
+<br>
+<footer class="paginacion">
+      <ul>
+        <li><a href="index.html" class="active">0</a></li>
+        <li><a href="pagina1.html">1</a></li>
+        <li><a href="pagina2.html">2</a></li>
+        <li><a href="pagina3.html">3</a></li>
+        <li><a href="pagina4.html">4</a></li>
+        <li><a href="pagina5.html">5</a></li>
+      </ul>
+    </footer>
+</section>
+</body>
+</html>
