@@ -1,0 +1,212 @@
+ 	*{margin: 0; padding: 0;}
+    .social {
+  position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+  left: 0; /* Establecemos la barra en la izquierda */
+  top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+  z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+ 
+  .social ul {
+    list-style: none;
+  }
+ 
+  .social ul li a {
+    display: inline-block;
+    color:#fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+  }
+ 
+  .social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+  .social ul li .icon-instagram {background-color: orange;}
+  .social ul li .icon-google2 {background: #d95232;}
+  .social  ul li .icon-whatsapp{background-color: lime; }
+ 
+  .social ul li a:hover {
+    background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+    padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+  }
+    	body{
+    		background-color:black;
+    	}
+    	header{
+    		width:100%;
+            overflow:hidden;
+            background: url(fondo2.jpg);
+            margin-bottom: 20px;
+            background-size: cover;
+            font-family: sans-serif;
+            font-family: lobster;
+    	}
+    	.wrapper{
+    		width: 90%;
+    		max-width: 1000px;
+    		margin: auto;
+    		overflow: hidden;
+    	}
+    	header .logo{
+    		color: #000000;
+    		font-size: 50px;
+            line-height: 200px;
+            float: left;
+    	}
+    	header nav{
+    		float: right;
+    		line-height: 200px;
+    	}
+    	header nav a {
+             display: inline-block;
+             background-color:gold;
+             text-decoration:none;
+             padding: 10px 20px;
+             line-height: normal;
+             font-size: 20px;
+             font-weight:bold;
+             -webkit-transition:all 500ms ease;
+             -o-transition:all 500ms ease;
+             transition:all 500ms ease;
+         }
+             header nav a:hover {
+             	background:#f56f3a;
+             	border-radius: 50px;
+             }
+             .header2 {
+             	position: fixed;
+             	height: 100px;
+                }
+             .header2 .logo {
+             	line-height: 100px;
+             	font-size: 30px;
+             	 }
+             	 .header2 nav{
+                    line-height: 100px;
+                     }
+              .contenido p {
+                 margin-bottom: 1em;
+              }
+              @media screen and (max-width: 950px) {
+              	header .logo,
+              	header nav {
+              		width: 100%;
+              		text-align: center;
+              		line-height: 100px;
+              	}
+              .header2 {
+              	height: auto;
+              }
+              .header2 .logo,
+              .header2 nav {
+              	line-height: 50px;
+              }
+
+              }
+  body{
+   background: url(fondo.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+.paginacion {
+  margin:20px 0;
+  width: 1000px;
+  height: 154px;
+  float: left;
+}
+ 
+.paginacion ul {
+  list-style:none;
+  text-align: center;
+}
+ 
+.paginacion ul li {
+  display:inline-block;
+  margin-right:10px;
+}
+ 
+.paginacion ul li a {
+  display:block;
+  padding:10px 20px;
+  color:gold;
+  background-color: black;
+  text-decoration: none;
+}
+ 
+.paginacion ul li a:hover {
+  background-color: gray;
+}
+ 
+.paginacion ul li .active {
+  background-color: silver;
+  font-weight:bold;
+}
+
+.ventana {
+  background-color: black;
+  width: 250px;
+  color:rgba(255,255,255,1);
+  font-family: Lobster;
+  font-family: 10px;
+  text-align: center;
+  padding: 20px;
+  min-height: 250px;
+  border-radius: 10px;
+  position: fixed;
+  right: 79%;
+  top: 43%;
+  display: none;
+
+}
+#cerrar{
+  color: rgba(255,255,255,1);
+  position: absolute;
+  right: 3px;
+  top: 1px;
+  
+}
+.contenedor{
+  position: relative;
+  top: 15px;
+}
+.text{
+  font-size: 30px;
+  font-family: Arial,Helvetica;
+  color: white;
+  border: 0px;
+  background: #808080;
+  width: 210px;
+  height: 50px;
+}
+.columna1{
+  font-size: 30px;
+  font-family: Arial,Helvetica;
+  color: white;
+  border: 0px;
+  background: #1E90FF;
+  width: 50px;
+  height: 50px;
+}
+.columna2{
+  font-size: 30px;
+  font-family: Arial,Helvetica;
+  color: white;
+  border: 0px;
+  background: #00BFFF;
+  width: 50px;
+  height: 50px;
+}
+
+
+#izq {
+  width: 500px;
+  height: auto;
+  float: left; 
+}
+
+#der{
+  width: 500px;
+  height: auto;
+  float: left;
+}
